@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💻 Gensyn-ai-Rl-Swarm_Guide {Mac/Linux} 💻
+# 💻RL Swarm Node Run Full Guide (PC and VPS and Mac)💻
 
 </div>
 

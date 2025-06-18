@@ -180,7 +180,17 @@ cloudflared tunnel --url http://localhost:3000
 screen -r gensyn
 ```
 
-> It will ask this question - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` and at last you will see this : ```Your training session is about to begin``` then you can detach from this gensyn screen session
+- It will ask some questions, you should send response properly
+- ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` : Write `N`
+- When you will see interface like this, you can detach from this screen session
+
+![Screenshot 2025-04-01 061641](https://github.com/user-attachments/assets/b5ed9645-16a2-4911-8a73-97e21fdde274)
+
+7. **Detach from `screen session`**
+- Use `Ctrl + A` and then press `D` to detach from this screen session.
+
+
+
 
 
  
@@ -198,6 +208,10 @@ It will Generate Logs Soon🙌
 
 
 * Now Detach from `screen session`
+  Use `Ctrl + A` and then press `D`
+  
+  
 * We have to Backup Some Important Files Now
+ `[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh`
 
-Use `Ctrl + A` and then press `D`
+

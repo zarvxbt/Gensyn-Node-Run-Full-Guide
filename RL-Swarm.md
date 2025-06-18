@@ -163,7 +163,6 @@ cloudflared tunnel --url http://localhost:3000
 
  ![image](https://github.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
 
-ub.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
 
   * Copy this link and open in chrome and complete login process
 

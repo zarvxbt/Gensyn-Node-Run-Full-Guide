@@ -251,6 +251,7 @@ screen -r gensyn
 
 ## SOLUTION OF ERRORS LIKE TERMINATED,FULL LOGS ETC (ZARV EXCLUSIVE SOLUTION ONLY)
 
+## working on google cloud vps 
 
 
 - Now if you get error after sometime or after  4-5 hours or 2-3 days
@@ -293,7 +294,7 @@ nano
 ```
 SPACE model name which you saved by cmd ls
 
-### 9. Make Changes in the followings  (works on google cloud vps)
+### 9. Make Changes in the followings  
 torch_dtype : float32
 bf16 : false
 tf32 : false

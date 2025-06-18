@@ -1,7 +1,7 @@
 # ⚙️ Gensyn Node Setup Guide
 
 > A simple and complete guide to running a Gensyn node | Verified by me ✅  
-> By [@yourhandle](https://twitter.com/yourhandle) | Early Web3 Contributor
+> By [@zarv](https://twitter.com/zarvxbt) | Early Web3 Contributor
 
 ---
 

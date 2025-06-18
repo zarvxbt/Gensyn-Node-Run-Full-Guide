@@ -87,12 +87,7 @@ yarn -v
 
 
 
----
 
-### 🧠 Powered by: [ZARVXBT](https://github.com/zarvxbt)  
-Building on the future of AI compute with 💚 Gensyn Swarm
-
----
 
 
 
@@ -334,3 +329,9 @@ python3 -m venv .venv
 
 NOW FOLLOW THE PROCESS 
 
+---
+
+### 🧠 Made by: [ZarvXBT](https://x.com/zarvxbt)  with ❤️
+Building on the future of AI compute with 💚 Gensyn Swarm
+
+---

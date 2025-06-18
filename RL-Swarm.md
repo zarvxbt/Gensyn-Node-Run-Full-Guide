@@ -220,6 +220,6 @@ After running the Gensyn node, it is essential to back up the swarm.pem file fro
 ![image](https://github.com/user-attachments/assets/489b02a8-40e1-4c91-b29b-9d9c30604e8c)
 
 1️⃣ **VPS/GPU/WSL to PC**
-- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from VPS/GPU/WSL to your PC then simply **visit the URL** (don't use the commands mentioned below) and press `Ctrl + S` to save these files.
+- **visit the URL** One By One and Save swarm file and others details as well
 
 

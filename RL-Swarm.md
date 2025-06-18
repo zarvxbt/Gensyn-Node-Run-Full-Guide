@@ -335,3 +335,6 @@ NOW FOLLOW THE PROCESS
 Building on the future of AI compute with 💚 Gensyn Swarm
 
 ---
+
+![Gensyn](https://img.shields.io/badge/Built%20on-Gensyn-green)
+![ZARVXBT](https://img.shields.io/badge/Author-ZARVXBT-blueviolet)

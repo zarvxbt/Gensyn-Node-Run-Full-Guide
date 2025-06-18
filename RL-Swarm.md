@@ -1,189 +1,122 @@
-# RL Swarm Node Run Full Guide (PC and VPS and Mac)
+## 📥 Installation
 
-### Offical Docs Guide - https://github.com/gensyn-ai/rl-swarm?tab=readme-ov-file
-
-### Dashboard (check ur points) - https://dashboard.gensyn.ai/
-
-1️⃣ Dependencies for WINDOWS & LINUX & VPS & Mac
-
-For WSL or VPS
+1. **Install `sudo`**
+```bash
+apt update && apt install -y sudo
 ```
-sudo apt update && sudo apt upgrade -y
+2. **Install other dependencies**
+```bash
+sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wget screen git lsof nano unzip iproute2 build-essential gcc g++
 ```
+3. **Install CUDA**
 ```
-sudo apt install -y curl git wget nano tmux htop nvme-cli lz4 jq make gcc clang build-essential autoconf automake pkg-config libssl-dev libleveldb-dev libgbm1 bsdmainutils ncdu unzip tar
+[ -f cuda.sh ] && rm cuda.sh; curl -o cuda.sh https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/cuda.sh && chmod +x cuda.sh && . ./cuda.sh
 ```
-For Mac
+4. **Create a `screen` session**
+```bash
+screen -S gensyn
 ```
-brew install git curl wget nano tmux htop jq make gcc autoconf automake pkg-config openssl leveldb lz4 coreutils
+5. **Clone official `rl-swarm` repo**
 ```
-
-2️⃣ Install Python & Node Js & Yarn & NPM & Pip & Dev. tool
-
-For WSL or VPS
+git clone https://github.com/gensyn-ai/rl-swarm.git && cd rl-swarm
 ```
-sudo apt-get install python3 python3-pip python3-venv python3-dev -y
-```
-```
-sudo apt-get update && curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - && sudo apt-get install -y nodejs && node -v && npm -v && sudo npm install -g yarn && yarn -v
-```
-```
-sudo apt install -y python3 && sudo apt install -y python3-pip && python3 --version && pip3 --version
-```
-```
-sudo apt install python3-dev python3-venv build-essential -y
-```
-```
-sudo apt-get update && sudo apt-get install -y curl gnupg apt-transport-https && curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - && echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && sudo apt-get update && sudo apt-get install -y yarn && yarn --version
-```
-For Mac
-```
-brew install python3 node yarn
-```
-
-3️⃣ Hugging Face Access Token (Optional)
-
-- Not Needed
-
-4️⃣ Download Some Files
-```
-git clone https://github.com/gensyn-ai/rl-swarm/
-cd rl-swarm
-```
-
-For VPS Only
-```
-apt install screen -y
-```
-```
-screen -S rlswarm
-```
-
-5️⃣ Install and Run RL Swarm
+6. **Run the swarm**
 ```
 python3 -m venv .venv
-source .venv/bin/activate
-./run_rl_swarm.sh
-```
-Put answer 'Y' (just press enter)
-
-Wait till you see waiting for UserData.json to be created
-
-Then open Browser and Input & Login by Google - http://localhost:3000/
-
-![1_qkd1ND0PxngzkxE4Z6VqBQ](https://github.com/user-attachments/assets/19ceac2c-b3ff-47d6-8a7c-f4f584288241)
-
-Now It will promt Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N] Enter N
-
-![1_zs7VHm5Fv_ZeFTsZdBGo9g](https://github.com/user-attachments/assets/123acf42-08bc-492b-aa13-d27359af9ce3)
-
-![429398341-3ac0514c-a7cc-4743-8389-f3246d5888a0](https://github.com/user-attachments/assets/7a1bb7ff-f77e-45bd-b3a2-f46139d35f3f)
-
-Take note of Username
-
-## Open Another Window for VPS to Login ur LocalHost
-
-1️⃣ Download Some Dependencies 
-```
-sudo apt install ufw -y
-sudo ufw allow 3000/tcp
-```
-
-2️⃣ Enable ufw
-```
-sudo ufw enable
-```
-
-3️⃣ Install Cloudflared
-```
-wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
-````
-```
-sudo dpkg -i cloudflared-linux-amd64.deb
-```
-```
-cloudflared --version
-```
-- Make sure your Node is running on port 3000 in Previous Screen
-
-4️⃣ Run the tunnel command
-```
-cloudflared tunnel --url http://localhost:3000
-```
-Access the Link from your local machine
-
-![430651391-c5bdfec5-123d-4625-8da8-f46269700950](https://github.com/user-attachments/assets/93590db1-9d6b-4a86-9d44-337506b6c06c)
-
-Then Login > Then Go to the Previous Screen to Check ur Logs
-
-```
-PRESS CTRL+A+D (to run ur node continuously)
-```
-- To check ur Node Again
-```
-screen -r rlswarm
-```
-
-## Open Another Window for VPS & WSL to save ur Swarm File
-
-1️⃣ Save your `swarm.pem` file to your Local Device from VPS (Open Command Prompt or Powershell)
-- From VPS to WSL Home Directory
-```
-scp USERNAME@YOUR_IP:~/rl-swarm/swarm.pem ~/swarm.pem
-```
-- From VPS to Desktop Screen Windows (username has no spaces)
-```
-scp USERNAME@YOUR_VPS_IP:~/rl-swarm/swarm.pem C:\Users\YourUsername\Desktop\
-```
-- From VPS to Desktop Screen Windows (username has spaces)
-```
-scp USERNAME@YOUR_VPS_IP:~/rl-swarm/swarm.pem "/mnt/c/Users/Your Username/Desktop/"
-```
-Replace ur "USERNAME" & "YOUR_IP" with your actual VPS Username & IP u got already. Replace YourUsername or Your Username with your actual Windows username
-
-2️⃣ Save your `swarm.pem` file to your Desktop screen on your PC from WSL (Open WSL)
-- username has no spaces
-```
-cp ~/rl-swarm/swarm.pem /mnt/c/Users/YourUsername/Desktop/
-```
-- username has spaces
-```
-cp ~/rl-swarm/swarm.pem "/mnt/c/Users/Your Username/Desktop/"
-```
-Replace YourUsername or Your Username with your actual Windows username
-
-3️⃣ To check your Windows username
-- Through Command Prompt or Powershell
-```
-echo %USERNAME%
-```
-
-4️⃣ Save your `swarm.pem` file to your Desktop screen on your Mac from HomeBrew
-```
-cp ~/rl-swarm/swarm.pem ~/Desktop/
-```
-
-## 🔶For Next Day Run This Command (Windows or Mac)
-
-#1 Open WSL or HomeBrew and Put this Command 
-```
-cd rl-swarm
-```
-```
-python3 -m venv .venv
-source .venv/bin/activate
+. .venv/bin/activate
 ./run_rl_swarm.sh
 ```
 
-## Delete Node File
-```
-rm -rf ~/rl-swarm
-```
+![image](https://github.com/user-attachments/assets/40d07439-ffd1-4207-9e51-fabc3fdbb8aa)
 
-## Backup your Key
+- After sometimes, u will see something like this if your running it on Linux system, so here follow the next step
+
+7. **Tunnel the `localhost` link**
+- There are multiple way to do this - localtunnel / ngrok / cloudflared, in this guide, I will use localtunnel
+- Here, keep the rl-swarm running in one tab, and open the GPU/VPS/WSL again in another tab
+- Use the below command in the new terminal
 ```
-cat ~/rl-swarm/modal-login/temp-data/userApiKey.json
+npm install -g localtunnel
 ```
+- Now use this command to get the password of this website
 ```
-cat ~/rl-swarm/modal-login/temp-data/userData.json
+curl https://loca.lt/mytunnelpassword
+```
+- Or simply your password is your VPS IP
+- Then use this command to get the wesbite link
+```
+lt --port 3000
+```
+- You will get a link like this `https://true-things-cry.loca.lt`
+
+![Screenshot 2025-05-30 062534](https://github.com/user-attachments/assets/92177227-51a3-46cd-b998-15ac2be59035)
+
+
+- Visit the website and enter the password to access it
+- Sign In using email address and then paste OTP
+- Now comeback to your main terminal and you see logs started to progress
+---
+- It will ask some questions, you should send response properly
+- ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` : Write `N`
+- When you will see interface like this, you can detach from this screen session
+
+![Screenshot 2025-04-01 061641](https://github.com/user-attachments/assets/b5ed9645-16a2-4911-8a73-97e21fdde274)
+
+7. **Detach from `screen session`**
+- Use `Ctrl + A` and then press `D` to detach from this screen session.
+
+ ## 🔄️ Back up `swarm.pem`
+After running the Gensyn node, it is essential to back up the swarm.pem file from your remote server (GPU or VPS) to your local PC. If you lose this file, your contribution will also be lost. I will mention 2 method , 1 is simpler but not that much secure and another one is secure but a lil bit complex for the beginners
+
+### Method 1 (Very Simple)
+- First make sure that you are in `rl-swarm` folder and then run this command
+```
+[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/zunxbt/gensyn-testnet/main/backup.sh && chmod +x backup.sh && ./backup.sh
+```
+- It will show something like this in your terminal
+ 
+![image](https://github.com/user-attachments/assets/489b02a8-40e1-4c91-b29b-9d9c30604e8c)
+
+1️⃣ **VPS/GPU/WSL to PC**
+- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from VPS/GPU/WSL to your PC then simply **visit the URL** (don't use the commands mentioned below) and press `Ctrl + S` to save these files.
+
+2️⃣ **One VPS/GPU/WSL to another VPS/GPU/WSL**
+- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from One VPS/GPU/WSL to another VPS/GPU/WSL then simply use the **commands** on another VPS/GPU/WSL where you want to use these files.
+
+### Method 2 (Manual)
+If you face any issue with this automated back up process then it is recommended to use manual guide : [Click Here](https://github.com/zunxbt/gensyn-testnet/blob/main/BACKUP.md)
+
+## 🟢 Node Status
+
+### 1. Check Logs
+- To check whether your node is running or not, you can check logs
+- To check logs you need to re-attach with screen session, so use the below command
+```
+screen -r gensyn
+```
+- If you see everything running then it's fine
+- Now detach from this screen session, Use `Ctrl + A` and then press `D` to detach from this screen session.
+- Everytime you reattach, every time you should detach
+
+### 2. Check Wins
+- Visit : https://gensyn-node.vercel.app/
+- Enter Peer-ID that you often see this in your logs
+- The more win, the better
+
+> [!Note]
+> If you see `0x0000000000000000000000000000000000000000` in `Connected EOA Address` section, that means your contribution is not being recorded, so you should run the node from beginning with fresh new email (means u need to delete existing `swarm.pem` file
+
+## ⚠️ Troubleshooting
+
+### 🔴 Daemon failed to start in 15.0 seconds
+- If you are facing this issue then follow this step by step guide
+- First use tihs command
+```
+nano $(python3 -c "import hivemind.p2p.p2p_daemon as m; print(m.__file__)")
+```
+- Then scroll down and look for this line `startup_timeout: float = 15,` , here u need to modify this 15 with 120, and after modifying it will look like this : `startup_timeout: float = 120,`
+- Save this changes, first use `Ctrl` + `X` and then press `Y` and then press `Enter`
+- Now use this command again to run `rl-swarm`
+```bash
+python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
 ```

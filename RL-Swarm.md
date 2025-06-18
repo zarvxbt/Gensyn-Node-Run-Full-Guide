@@ -101,4 +101,7 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 - You should choose 1 to use existing `swarm.pem` file
  
 >[!Note]
-> It will ask this question - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` and at last you will see this : ```Your training session is about to begin``` then you can detach from this gensyn screen session
+> It will ask this question - ```>> Would you like to connect to the Testnet? [Y/n] ``` Write `Y`
+> ``` Which swarm would you like to join (Math (A) or Math Hard (B))? [A/b] ``` Write `A`
+> ``` How many parameters (in billions)? [0.5, 1.5, 7, 32, 72] ``` Write `7` running smooth
+```Your training session is about to begin``` then you can detach from this gensyn screen session

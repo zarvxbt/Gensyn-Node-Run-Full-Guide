@@ -184,4 +184,20 @@ screen -r gensyn
 
 
  
-* Done!✅
+Here we go🚀
+
+Its Done ✅
+
+  
+![node sdone](https://github.com/user-attachments/assets/f90e3b7e-cd8d-4899-907a-b82838a0f160)
+
+
+
+
+It will Generate Logs Soon🙌
+
+
+* Now Detach from `screen session`
+* We have to Backup Some Important Files Now
+
+Use `Ctrl + A` and then press `D`

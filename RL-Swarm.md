@@ -117,9 +117,8 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 
 ###  Now Detach from this screen session
 - Use `Ctrl + A` and then press `D` to detach from this screen session
-- 
 
-- Now Paste Thess Codes one by one for Login 
+- Now Paste These Codes one by one 
 
 * Allow Incoming connection on VPS
 
@@ -158,10 +157,12 @@ cloudflared --version
 cloudflared tunnel --url http://localhost:3000
 ```
 
-* Copy this link and open in chrome and complete login process
+
 
     
-    ![image](https://github.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
+  ![image](https://github.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
+
+  * Copy this link and open in chrome and complete login process
 
 * Now follow Login!
  

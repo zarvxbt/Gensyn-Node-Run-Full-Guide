@@ -192,6 +192,7 @@ screen -r gensyn
 - When you will see interface like this, you can detach from this screen session
 
 ![Screenshot 2025-04-01 061641](https://github.com/user-attachments/assets/b5ed9645-16a2-4911-8a73-97e21fdde274)
+![node sdone](https://github.com/user-attachments/assets/f90e3b7e-cd8d-4899-907a-b82838a0f160)
 
 7. **Detach from `screen session`**
 - Use `Ctrl + A` and then press `D` to detach from this screen session.
@@ -200,22 +201,6 @@ screen -r gensyn
 
 
 
- 
-Here we go🚀
-
-Its Done ✅
-
-  
-![node sdone](https://github.com/user-attachments/assets/f90e3b7e-cd8d-4899-907a-b82838a0f160)
-
-
-
-
-It will Generate Logs Soon🙌
-
-
-* Now Detach from `screen session`
-  Use `Ctrl + A` and then press `D`
   
   
  ## 🔄️ Back up `swarm.pem`

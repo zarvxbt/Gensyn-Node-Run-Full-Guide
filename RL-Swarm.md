@@ -301,9 +301,17 @@ tf32 : false
 gradient_checkpointing: false
 per_device_train_batch_size: 1
 
+
+![1](https://github.com/user-attachments/assets/0f1c7768-a468-444e-9c41-24b045a0b489)                         ![2](https://github.com/user-attachments/assets/04265b6d-32cf-45fa-bd92-08dd29720eda)
+
 After editing this 👆 press Cntrl+X then Y and enter 👍
 
-### 8. **Run the swarm**
+### 10
+```
+cd $HOME/rl-swarm/
+```
+
+### 11. **Run the swarm**
 ```
 python3 -m venv .venv
 . .venv/bin/activate

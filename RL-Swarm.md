@@ -223,3 +223,23 @@ After running the Gensyn node, it is essential to back up the swarm.pem file fro
 - **visit the URL** One By One and Save swarm file and others details as well
 
 
+## 🟢 Node Status
+
+### 1. Check Logs
+- To check whether your node is running or not, you can check logs
+- To check logs you need to re-attach with screen session, so use the below command
+```
+screen -r gensyn
+```
+- If you see everything running then it's fine
+- Now detach from this screen session, Use `Ctrl + A` and then press `D` to detach from this screen session.
+- Everytime you reattach, every time you should detach
+
+### 2. Check Wins
+- Visit : https://gensyn-node.vercel.app/
+- Enter Peer-ID that you often see this in your logs
+- The more win, the better
+
+> [!Note]
+> If you see `0x0000000000000000000000000000000000000000` in `Connected EOA Address` section, that means your contribution is not being recorded, so you should run the node from beginning with fresh new email (means u need to delete existing `swarm.pem` file
+

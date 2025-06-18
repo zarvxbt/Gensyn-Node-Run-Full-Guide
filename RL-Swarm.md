@@ -108,3 +108,7 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
  ``` How many parameters (in billions)? [0.5, 1.5, 7, 32, 72] ``` Write `7` running smooth
  
 ``` Your training session is about to begin``` then you can detach from this gensyn screen session
+
+###  Now Detach from this screen session
+- Use `Ctrl + A` and then press `D` to detach from this screen session.
+

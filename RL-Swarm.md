@@ -225,7 +225,7 @@ After running the Gensyn node, it is essential to back up the swarm.pem file fro
 
 ## 🟢 Node Status
 
-### 1. Check Logs
+###  Check Logs
 - To check whether your node is running or not, you can check logs
 - To check logs you need to re-attach with screen session, so use the below command
 ```
@@ -235,11 +235,77 @@ screen -r gensyn
 - Now detach from this screen session, Use `Ctrl + A` and then press `D` to detach from this screen session.
 - Everytime you reattach, every time you should detach
 
-### 2. Check Wins
+###  Check Wins
 - Visit : https://gensyn-node.vercel.app/
 - Enter Peer-ID that you often see this in your logs
 - The more win, the better
 
 > [!Note]
 > If you see `0x0000000000000000000000000000000000000000` in `Connected EOA Address` section, that means your contribution is not being recorded, so you should run the node from beginning with fresh new email (means u need to delete existing `swarm.pem` file
+
+
+
+
+## SOLUTION OF ERRORS LIKE TERMINATED,FULL LOGS ETC (ZARV EXCLUSIVE SOLUTION ONLY)
+
+
+
+- Now if you get error after sometime or after  4-5 hours or 2-3 days
+
+![user issue gensyn](https://github.com/user-attachments/assets/20a57187-baf1-43bb-9b62-3305d9e0091b)
+
+
+### 1. First kill all the existing gensyn screen session
+```
+pkill -f "SCREEN.*gensyn"
+```
+### 2. Create a screen session named `gensyn`
+```
+screen -S gensyn
+```
+### 3. Delete exisiting temp-data
+```
+[ -n "$(ls "$HOME/rl-swarm/modal-login/temp-data/"*.json 2>/dev/null)" ] && rm -f "$HOME/rl-swarm/modal-login/temp-data/"*.json 2>/dev/null || true
+```
+### 4.
+```
+`cd $HOME/rl-swarm/hivemind_exp/configs/mac/ `
+ ```
+### 5. Save the model by copy and pasting somewhere
+```
+`ls`
+```
+### 6.
+```
+`sudo apt update`
+```
+
+### 7.
+```
+`sudo apt install nano`
+```
+### 8.
+```
+`nano`
+```
+SPACE model name which you saved by cmd ls
+
+### 9. Make Changes in the followings  (works on google cloud vps)
+torch_dtype : float32
+bf16 : false
+tf32 : false
+gradient_checkpointing: false
+per_device_train_batch_size: 1
+
+After editing this 👆 press Cntrl+X then Y and enter 👍
+
+### 10.
+` cd $HOME/rl-swarm/`
+
+### 11.
+`python3 -m venv .venv
+. .venv/bin/activate
+./run_rl_swarm.sh`
+
+NOW FOLLOW THE PROCESS 
 

@@ -159,12 +159,27 @@ cloudflared tunnel --url http://localhost:3000
 
 
 
-    
- ![login pic](https://github.com/user-attachments/assets/076221e8-8b21-4c31-8f0a-310de095442b)
+ ![image](https://github.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
+
 ub.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
 
   * Copy this link and open in chrome and complete login process
 
 * Now follow Login!
+
+![login pic](https://github.com/user-attachments/assets/076221e8-8b21-4c31-8f0a-310de095442b)
+
+![LOG SUC](https://github.com/user-attachments/assets/f10a6681-799a-406d-8002-0ca83b8bec08)
+
+
+### Now Re-attach with screen session
+
+```
+screen -r gensyn
+```
+
+> It will ask this question - ```Would you like to push models you train in the RL swarm to the Hugging Face Hub? [y/N]``` here Write `N` and at last you will see this : ```Your training session is about to begin``` then you can detach from this gensyn screen session
+
+
  
 * Done!✅

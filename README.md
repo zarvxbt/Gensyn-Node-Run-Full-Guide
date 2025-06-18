@@ -20,5 +20,4 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install docker.io docker-compose -y
 sudo systemctl enable docker && sudo systemctl start docker
 
-git clone https://github.com/gensyn-ai/peer-node.git
-cd peer-node
+

@@ -1,26 +1,21 @@
-## 🛠️ Pre-Requirements
+# ⚙️ Gensyn Node Setup Guide
 
-### 🔧 Install Python and Other Tools
-
-| Platform     | Command to Install Python |
-|--------------|---------------------------|
-| 🖥️ Windows   | Download from [python.org](https://www.python.org/downloads/windows/) and install manually |
-| 🍎 macOS     | brew install python (requires [Homebrew](https://brew.sh/)) |
-| 🐧 Linux/WSL | sudo apt update && sudo apt install -y python3 python3-pip |
+> A simple and complete guide to running a Gensyn node | Verified by me ✅  
+> By [@yourhandle](https://twitter.com/yourhandle) | Early Web3 Contributor
 
 ---
 
-### ✅ Other Tools to Set Up
+## 📌 Prerequisites
 
-| Tool        | Command                                                                 |
-|-------------|-------------------------------------------------------------------------|
-| Git         | sudo apt install git or download from [git-scm.com](https://git-scm.com/) |
-| Node.js     | nvm install --lts or sudo apt install nodejs npm                   |
-| Docker      | [Install via Docker Docs](https://docs.docker.com/get-docker/)         |
+- Linux VPS or bare metal (Recommended: Ubuntu 22.04)
+- Minimum 4 CPU, 16 GB RAM, 200GB SSD
+- Docker & Docker Compose installed
 
 ---
 
-### 📂 Open Your VS Code
+## 🛠️ 1. System Update & Docker Install
 
-1. Open your folder using: code .
-2. Or open manually in the VS Code GUI
+`bash
+sudo apt update && sudo apt upgrade -y
+sudo apt install docker.io docker-compose -y
+sudo systemctl enable docker && sudo systemctl start docker

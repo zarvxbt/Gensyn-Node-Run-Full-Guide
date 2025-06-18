@@ -331,10 +331,9 @@ NOW FOLLOW THE PROCESS
 
 ---
 
-### Made by [zarvxbt](https://x.com/zarvxbt)  with 💚
-Building on the future of AI compute with 💚 Gensyn Swarm
+### Made by [ZARV](https://x.com/zarvxbt)  with 💚
+
 
 ---
 
-![Gensyn](https://img.shields.io/badge/Built%20on-Gensyn-green)
-![ZARVXBT](https://img.shields.io/badge/Author-ZARVXBT-blueviolet)
+

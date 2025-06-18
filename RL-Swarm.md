@@ -84,6 +84,18 @@ yarn -v
 ```
 <div align="center">
 
+
+
+
+---
+
+### 🧠 Powered by: [ZARVXBT](https://github.com/zarvxbt)  
+Building on the future of AI compute with 💚 Gensyn Swarm
+
+---
+
+
+
 # 👨🏻‍💻 Start The Node (Linux/Mac) 
 
 </div>

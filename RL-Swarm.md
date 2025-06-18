@@ -109,6 +109,60 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
  
 ``` Your training session is about to begin``` then you can detach from this gensyn screen session
 
-###  Now Detach from this screen session
-- Use `Ctrl + A` and then press `D` to detach from this screen session.
+- Wait 2-3 Minutes and we will see on screen like this 
+>> Failed to open http://localhost:3000. Please open it manually.
+>> Waiting for modal userData.json to be created...
 
+ 
+
+###  Now Detach from this screen session
+- Use `Ctrl + A` and then press `D` to detach from this screen session
+- 
+
+- Now Paste Thess Codes one by one for Login 
+
+* Allow Incoming connection on VPS
+
+```
+sudo apt install ufw -y
+sudo ufw allow 22
+sudo ufw allow 3000/tcp
+```
+
+* Enable ufw
+
+```
+sudo ufw enable
+```
+
+* Install cloudflared on the VPS
+
+```
+wget -q https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64.deb
+````
+
+```
+sudo dpkg -i cloudflared-linux-amd64.deb
+```
+
+* Check version
+
+```
+cloudflared --version
+```
+
+
+* Run the tunnel command
+
+```
+cloudflared tunnel --url http://localhost:3000
+```
+
+* Copy this link and open in chrome and complete login process
+
+    
+    ![image](https://github.com/user-attachments/assets/c5bdfec5-123d-4625-8da8-f46269700950)
+
+* Now follow Login!
+ 
+* Done!✅

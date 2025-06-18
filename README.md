@@ -17,7 +17,6 @@ Status: Confirmed via testnet rewards (per Litepaper), but no official date or s
 
 Eligibility: Join testnet—install a node (guide on gensyn.ai), fill out Supply and Access Compute forms, engage on X/Discord.
 
-![Screenshot 2025-04-04 141341](https://github.com/user-attachments/assets/df22a465-a777-4c3a-a118-fe06cda525be)
 
 The complete testnet launch will be carried out in 4 phases.
 1. RL Swarm — collaborative RL over the internet

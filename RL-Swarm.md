@@ -118,7 +118,9 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 ###  Now Detach from this screen session
 - Use `Ctrl + A` and then press `D` to detach from this screen session
 
-- Now Paste These Codes one by one 
+- Now Paste These Codes one by one
+
+
 
 * Allow Incoming connection on VPS
 

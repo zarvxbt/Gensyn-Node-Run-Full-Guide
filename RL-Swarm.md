@@ -211,7 +211,15 @@ It will Generate Logs Soon🙌
   Use `Ctrl + A` and then press `D`
   
   
-* We have to Backup Some Important Files Now
+ ## 🔄️ Back up `swarm.pem`
+After running the Gensyn node, it is essential to back up the swarm.pem file from your remote server (GPU or VPS) to your local PC. If you lose this file, your contribution will also be lost.
  `[ -f backup.sh ] && rm backup.sh; curl -sSL -O https://raw.githubusercontent.com/AbhiEBA/gensyn1/main/backup.sh && chmod +x backup.sh && ./backup.sh`
+
+ - It will show something like this in your terminal
+ 
+![image](https://github.com/user-attachments/assets/489b02a8-40e1-4c91-b29b-9d9c30604e8c)
+
+1️⃣ **VPS/GPU/WSL to PC**
+- If you want to backup `swarm.pem`(Must), `userData.json` (Optional), `userApiKey.json` (Optional) from VPS/GPU/WSL to your PC then simply **visit the URL** (don't use the commands mentioned below) and press `Ctrl + S` to save these files.
 
 

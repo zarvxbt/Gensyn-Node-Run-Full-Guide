@@ -246,6 +246,9 @@ screen -r gensyn
 
 
 
+
+
+
 ## SOLUTION OF ERRORS LIKE TERMINATED,FULL LOGS ETC (ZARV EXCLUSIVE SOLUTION ONLY)
 
 
@@ -269,24 +272,24 @@ screen -S gensyn
 ```
 ### 4.
 ```
-`cd $HOME/rl-swarm/hivemind_exp/configs/mac/ `
+cd $HOME/rl-swarm/hivemind_exp/configs/mac/ 
  ```
 ### 5. Save the model by copy and pasting somewhere
 ```
-`ls`
+ls
 ```
 ### 6.
 ```
-`sudo apt update`
+sudo apt update
 ```
 
 ### 7.
 ```
-`sudo apt install nano`
+sudo apt install nano
 ```
 ### 8.
 ```
-`nano`
+nano
 ```
 SPACE model name which you saved by cmd ls
 
@@ -299,13 +302,14 @@ per_device_train_batch_size: 1
 
 After editing this 👆 press Cntrl+X then Y and enter 👍
 
-### 10.
-` cd $HOME/rl-swarm/`
-
-### 11.
-`python3 -m venv .venv
+### 8. **Run the swarm**
+```
+python3 -m venv .venv
 . .venv/bin/activate
-./run_rl_swarm.sh`
+./run_rl_swarm.sh
+```
+
+
 
 NOW FOLLOW THE PROCESS 
 

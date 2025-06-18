@@ -13,11 +13,4 @@
 
 ---
 
-## 🛠️ 1. System Update & Docker Install
-
-`bash
-sudo apt update && sudo apt upgrade -y
-sudo apt install docker.io docker-compose -y
-sudo systemctl enable docker && sudo systemctl start docker
-
 

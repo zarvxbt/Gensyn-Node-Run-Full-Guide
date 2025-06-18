@@ -87,4 +87,11 @@ yarn -v
 # 👨🏻‍💻 Start The Node (Linux/Mac) 
 
 </div>
+### use this command to run the `rl-swarm`
+```
+cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-testnet.git && chmod +x gensyn-testnet/gensyn.sh && ./gensyn-testnet/gensyn.sh
+```
+- After running the above command, it will show something like this :
+  
+![Screenshot 2025-04-21 075405](https://github.com/user-attachments/assets/37d28590-6f4f-4ecd-9cb6-c831a821e400)
 

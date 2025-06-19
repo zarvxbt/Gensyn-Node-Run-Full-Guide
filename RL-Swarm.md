@@ -173,7 +173,11 @@ cloudflared tunnel --url http://localhost:3000
 
   * Copy this link and open in chrome and complete login process
 
-* Now follow Login!
+ <div align="center">
+
+# LOGIN PROCESS
+
+</div>
 
 ![login pic](https://github.com/user-attachments/assets/076221e8-8b21-4c31-8f0a-310de095442b)
 

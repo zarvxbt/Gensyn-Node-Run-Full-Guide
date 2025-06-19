@@ -127,7 +127,12 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 
 - Now Paste These Codes one by one👇
 
-# Login Process
+<div align="center">
+
+# LOGIN PROCESS
+
+</div>
+
 
 * Allow Incoming connection on VPS
 
@@ -173,12 +178,7 @@ cloudflared tunnel --url http://localhost:3000
 
   * Copy this link and open in chrome and complete login process
 
- <div align="center">
-
-# LOGIN PROCESS
-
-</div>
-
+ 
 ![login pic](https://github.com/user-attachments/assets/076221e8-8b21-4c31-8f0a-310de095442b)
 
 ![LOG SUCCCC](https://github.com/user-attachments/assets/2b1e76ce-ad6f-453d-8391-29a05b187e34)

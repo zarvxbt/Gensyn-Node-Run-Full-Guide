@@ -125,9 +125,9 @@ cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/zunxbt/gensyn-
 ###  Now Detach from this screen session
 - Use `Ctrl + A` and then press `D` to detach from this screen session
 
-- Now Paste These Codes one by one
+- Now Paste These Codes one by one👇
 
-
+# Login Process
 
 * Allow Incoming connection on VPS
 
@@ -315,7 +315,9 @@ python3 -m venv .venv
 
 
 
-NOW FOLLOW THE PROCESS 
+# Now folow the login process again
+
+DONE✅
 
 ---
 

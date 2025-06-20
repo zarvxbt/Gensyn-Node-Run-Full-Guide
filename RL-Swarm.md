@@ -325,7 +325,7 @@ DONE✅
 
 ---
 
-### Made by [ZARV](https://x.com/zarvxbt)  with 💚
+### Made with 💚 by [zarv](https://x.com/zarvxbt)  
 
 
 ---

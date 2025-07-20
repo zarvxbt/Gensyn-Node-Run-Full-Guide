@@ -1,5 +1,5 @@
 >[!Note]
->Whenever Gensyn updates their node, use these commands one by one. However, wait for my update before proceeding. Join my Telegram channel to get the latest information when an update is needed : [ZunXBT](https://t.me/zarvxbt)
+>Whenever Gensyn updates their node, use these commands one by one. However, wait for my update before proceeding. Join my Telegram channel to get the latest information when an update is needed : [ZarvXBT](https://t.me/zarvxbt)
 
 ### 1. First kill all the existing gensyn screen session
 ```

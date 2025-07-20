@@ -319,7 +319,7 @@ python3 -m venv .venv
 
 
 
-# Now folow the login process again
+# Now follow the login process again
 
 DONE✅
 

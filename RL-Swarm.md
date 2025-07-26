@@ -331,8 +331,7 @@ DONE✅
 </div>
 
 
-Instructions to setup a swarm node monitoring telegram bot and earn **The Swarm** Discord role
-* Gswarm Official Docs: [Link ](https://gswarm.dev/docs)
+Follow these instructions to set up a Swarm node monitoring Telegram bot and earn the Swarm Discord role
 
 ## Step 1. Install Gswarm
 ```bash
@@ -373,7 +372,6 @@ gswarm --version
 https://api.telegram.org/bot1234567890:ABCdefGHIjklMNOpqrsTUVwxyz/getUpdates
 ```
 
-* In your Browser, enable `Pretty-print` for better readability.
 
 **Sample Response:**
 ```
